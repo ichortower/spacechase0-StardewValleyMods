@@ -352,13 +352,13 @@ namespace SpaceCore
             helper.Events.GameLoop.Saving += this.OnSaving;
             helper.Events.Display.MenuChanged += this.OnMenuChanged;
 
-            Event.RegisterCustomCommand("damageFarmer", DamageFarmerEventCommand);
-            Event.RegisterCustomCommand("giveHat", GiveHatEventCommand);
-            Event.RegisterCustomCommand("setDating", SetDatingEventCommand);
-            Event.RegisterCustomCommand("totemWarpEffect", TotemWarpEventCommand);
-            Event.RegisterCustomCommand("setActorScale", SetActorScale);
-            Event.RegisterCustomCommand("cycleActorColors", CycleActorColors);
-            Event.RegisterCustomCommand("flash", FlashEventCommand); 
+            Event.RegisterCommand("damageFarmer", DamageFarmerEventCommand);
+            Event.RegisterCommand("giveHat", GiveHatEventCommand);
+            Event.RegisterCommand("setDating", SetDatingEventCommand);
+            Event.RegisterCommand("totemWarpEffect", TotemWarpEventCommand);
+            Event.RegisterCommand("setActorScale", SetActorScale);
+            Event.RegisterCommand("cycleActorColors", CycleActorColors);
+            Event.RegisterCommand("flash", FlashEventCommand);
 
             Commands.Register();
             VanillaAssetExpansion.VanillaAssetExpansion.Init();
